@@ -355,7 +355,7 @@ library SafeMath {
     }
 }
 
-contract StableFund is Ownable, ReentrancyGuard {
+contract RewardVault is Ownable, ReentrancyGuard {
     using SafeMath for uint256;
 
     uint256 public developerFee = 300; // 300 : 3 %. 10000 : 100 %

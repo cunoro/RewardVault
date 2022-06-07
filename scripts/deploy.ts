@@ -19,7 +19,7 @@ async function main() {
 
   // We get the contract to deploy
   const RewardVault = await ethers.getContractFactory("RewardVault");
-  const rewardVault = await RewardVault.deploy(process.env.FEE_WALLET);
+  const rewardVault = await RewardVault.deploy(process.env.CHARITY_WALLET);
 
   await rewardVault.deployed();
 
@@ -32,3 +32,5 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+
+// 203784000
